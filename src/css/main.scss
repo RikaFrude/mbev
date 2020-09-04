@@ -1,0 +1,456 @@
+$mwhite:#FDFDFD;
+$mgray:#F5F5F5;
+$mblack:#444140;
+$primarycolor:#F9423A;
+
+#app {
+
+    font-family: Avenir,
+        Helvetica,
+        Arial,
+        sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $mblack;
+    overflow-y: hidden;
+    background-color: $mwhite;
+
+
+    .ldbanner {
+        background-image: url('./assets/homepage-mutlubiev.jpg');
+        background-size: cover;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        margin: 0 !important;
+        height: 550px;
+        position: relative;
+
+        /* Center the image */
+
+    }
+
+    .ldtext p {
+        font-size: 36px;
+        font-weight: 700;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.5;
+        color: #000;
+        text-shadow: 0 0 1px #fff;
+        letter-spacing: 2px;
+    }
+
+    .smini-img-wrapper {
+    margin: auto;
+     height:44px;
+     width:44px;
+    }
+
+    .smini-prevcards {
+        margin :-32px auto auto auto;
+
+        
+    }
+
+    .smini-card {
+        margin: 0 0 64px 0;
+        border-radius: 4px;
+        z-index: 3;
+        padding: 16px 16px;
+        background-color: $mwhite;
+        -webkit-box-shadow: 0px 3px 9px -2px rgba(83, 83, 83, 0.30);
+        -moz-box-shadow: 0px 3px 9px -2px rgba(83, 83, 83, 0.30);
+        box-shadow: 0px 3px 9px -2px rgba(83, 83, 83, 0.30);
+
+        p{
+            font-weight: 600;
+        }
+    }
+
+    .areaSpaceing {
+        padding: 100px 0 100px 0;
+    }
+    .areaSpacing-mg{
+        margin: 50px 0 50px 0;
+    }
+    .bg-gray{
+    background-color: $mgray;
+
+    .footersocial{
+
+        margin-top:25px;
+        .fsociico{
+            float: left;
+            margin:8px;     
+           
+            font-size: 24px;
+            span{
+                text-align: center;
+                height: 32px;
+                width: 32px;
+                padding: 4px;
+                color:rgba($primarycolor, 0.9);
+                background-color: $mwhite;
+                }
+
+                span:hover,span:active,span:focus{
+                   color:$mwhite;
+                    background-color: $primarycolor;
+                }
+        }
+    }
+    .footer-title{
+        letter-spacing: 2px;
+        padding-bottom: -8px;
+    }
+    .footerlink a{
+        color: $mblack;
+        letter-spacing: 1.5px;
+        padding-top:8px;
+        margin-bottom:8px;
+
+       
+    }
+    .footerlink a:hover,.footerlink a:active,.footerlink a:focus{
+        color: $mblack;
+        text-decoration: none;
+        padding-left:8px;
+    }
+}
+    ///////////////////////////////////
+    .btn-login {
+        border-radius: 4px;
+        color: $primarycolor;
+        background-color: $mwhite;
+        font-weight: 600;
+        font-size: 14px;
+        padding: 8px 16px;
+        border: 1px solid $primarycolor;
+        outline: none !important;
+        text-decoration: none;
+        position: relative;
+        outline: 0;
+        box-shadow: none;
+        overflow: hidden;
+        background: none;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.15s ease-in;
+        -o-transition: 0.15s ease-in;
+        -ms-transition: 0.15s ease-in;
+        -moz-transition: 0.15s ease-in;
+        -webkit-transition: 0.10s ease-in;
+
+    }
+
+    .fill:hover {
+        color: $mwhite;
+        text-decoration: none;
+    }
+
+    .fill:before {
+        content: "";
+        position: absolute;
+        background: $primarycolor;
+        border: $primarycolor;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+        border: none;
+        box-shadow: none;
+        outline: none !important;
+    }
+
+    .fill:hover:before {
+        top: 0;
+        text-decoration: none;
+    }
+
+    /////////////////////////////
+    .btn-primary {
+        border-radius: 4px;
+        color: $mwhite;
+        background-color: $primarycolor;
+        font-weight: 600;
+        font-size: 16px;
+        padding: 16px 32px;
+        border: 1px solid $primarycolor;
+        box-shadow: none !important;
+        outline: none !important;
+        text-decoration: none;
+        position: relative;
+        outline: 0;
+        overflow: hidden;
+        z-index: 1;
+        cursor: pointer;
+        transition: 0.15s ease-in;
+        -o-transition: 0.15s ease-in;
+        -ms-transition: 0.15s ease-in;
+        -moz-transition: 0.15s ease-in;
+        -webkit-transition: 0.10s ease-in;
+
+    }
+
+    .fill-primary:hover {
+        color: $primarycolor;
+        text-decoration: none;
+        border: 1px solid $primarycolor;
+    }
+
+    .fill-primary:before {
+        content: "";
+        position: absolute;
+        background: $mwhite;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        top: 100%;
+        z-index: -1;
+        -webkit-transition: top 0.09s ease-in;
+        box-shadow: none;
+        outline: none !important;
+    }
+
+    .fill-primary:hover:before {
+        top: 0;
+        text-decoration: none;
+    }
+
+
+}
+
+#nav {
+    padding: 30px;
+
+    a {
+        font-weight: 600;
+        color:rgba( $mblack, 0.50 );
+        
+
+        &.router-link-exact-active {
+            color:rgba( $mblack, 1 );
+        }
+    }
+
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+    width: 100%;
+    background-color: $mwhite;
+}
+#services{
+
+    .mobileland{
+        margin: 30% 0;
+    
+    }
+
+    .imgwrap-mb{
+      
+        img{
+            max-width: 500px;
+            max-height: 500px;
+            width: auto;
+            height: 50%;
+        }
+    }
+    .service-title{
+    h1{
+        letter-spacing: 3px;
+        margin-bottom: 32px;
+    }
+        p{
+            line-height: 2;
+        }
+    
+}
+.serviceminisp{
+    h1{
+    text-align: left;
+    margin-bottom: 52px;
+    padding-left: 18px;
+    font-size: 24px;
+    letter-spacing: 2px;
+    }
+}
+
+}
+
+
+
+
+.home {
+
+    .nttxt{
+        p{
+            line-height: 2;
+            padding: 0 17%;
+            margin-bottom: 50px;
+        }    
+    }
+
+    .axatxt {
+        text-align: left;
+        padding: 32px 0 32px 0;
+       float: left;
+        max-width: 85%;
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            letter-spacing: 2px;
+            padding-bottom:36px;
+        }
+
+        p {
+            
+            line-height: 2;
+            letter-spacing: 1.5px;
+           
+        }
+
+        p a {
+
+            color: $mblack;
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+    }
+
+    .axaimg-wrapper {
+        margin: auto;
+        max-width: 100%;
+        height: auto;
+    }
+    .special-card{
+        border:none!important;
+    }
+    #carousel-no-animation___BV_indicator_2_{
+        color: $mblack;
+    }
+
+    .PrimaryTitle h1{
+        padding-bottom: 50px;
+        letter-spacing: 2px;
+        font-weight: 200;
+
+    }
+
+    .card{
+        border:none;
+        width: 100%;
+        max-height: 600px;
+        margin:25px;
+        .card-title{
+            font-weight: 600;
+            letter-spacing: 2px;
+
+        }
+        .card-text{
+line-height: 2;
+        }
+
+        .card-img-top{
+            padding: 8px;
+        }
+    }
+}
+
+.login{
+    margin-top:10%;
+    .mb-10{
+        margin-bottom: 10%;
+    }
+    input:hover, input:focus, input:active{
+        box-shadow: none;
+        outline:none;
+        border-color: $primarycolor;
+    }
+    .prcolor{
+        color: $primarycolor!important;
+    }
+    label{
+        font-size:0.9rem;
+    }
+    .form-check{
+        margin:8px;
+    }
+    .card{
+       border:1px solid $primarycolor;
+       border-radius:18px;  
+    }
+    .loginform{
+        border-radius: 16px;
+        border:none;
+        background-color: $primarycolor;
+    
+        input{
+            border:none;
+            background-color: $mwhite;
+            box-shadow: none;
+            outline:none;
+        }
+        a{
+            color: $mgray;
+        }
+        a:hover,a:active,a:focus{
+            color: $mblack;
+            text-decoration:none ;
+        }
+        button{
+            color: $primarycolor;
+            background-color: $mwhite;
+            padding: 16px;
+            font-weight: 600;
+            font-size: 16px;
+        }
+        label{
+            font-size:1rem;
+            color: $mgray;
+        }
+        .card-title{
+            color:$mgray;
+            font-weight:600;
+        }
+    }
+
+
+    .form-check a{
+        color: $primarycolor;
+        font-size:1rem;
+    }
+ 
+
+  
+.registerform{
+    input{
+        border:1px solid $primarycolor;
+        background-color: $mgray;
+        box-shadow: none;
+        outline:none;
+    }
+
+}
+
+
+
+}
